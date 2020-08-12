@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="alert alert-success" role="alert">
+  Operation success
+  <a href="{%url 'shop:item_list'%}">Back to Home</a>
+</div>
+
+{% endblock %}

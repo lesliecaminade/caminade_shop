@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="alert alert-danger" role="alert">
+  <form class="" method="post">
+
+  {%csrf_token%}
+  <h4 class="alert-heading">Are you sure you want to delete this item?</h4>
+  <button type="submit" name="button">Yes delete this item forever.</button>
+
+  </form>
+</div>
+
+{%endblock%}

@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<div class="alert alert-success" role="alert">
+  Thanks for sending your order! The seller will contact you soon using contact details you provided.
+  <a href="{%url 'shop:item_list'%}">Back to Home</a>
+</div>
+
+{% endblock %}
